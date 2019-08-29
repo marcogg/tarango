@@ -1,0 +1,97 @@
+/*
+Theme Name: 	Betheme Child
+Theme URI: 		http://themes.muffingroup.com/betheme
+Author: 		Muffin group
+Author URI: 	http://muffingroup.com
+Description:	Child Theme for Betheme - Premium WordPress Theme
+Template:		betheme
+Version: 		1.2
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+.fancy_heading .title {font-size:68px !important ;}
+ .icon_box .icon_wrapper:before {border-color: #EDEBE7; !important}
+.icon_box .icon_wrapper {width:100% !important; height: 100% !important; border:0px !important; border-radius:0% !important;}
+.icon_wrapper {background: rgb(237, 235, 231) !important; box-shadow:none !important;}
+.icon_box:hover .icon_wrapper:before, .icon_box a:hover .icon_wrapper:before {background: rgb(237, 235, 231) !important;}
+.club-house:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse.png) no-repeat;}
+.club-house:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse1.png) no-repeat;}
+
+
+.club-house:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse.png) no-repeat;}
+.club-house:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse1.png) no-repeat;}
+
+.muelle:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/3-muelle1.png) no-repeat;}
+.muelle:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/3-muelle.png) no-repeat;}
+
+.lago:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/4-lago1.png) no-repeat;}
+.lago:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/4-lago.png) no-repeat;}
+
+.ludoteca:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/5-ludoteca1.png) no-repeat;}
+.ludoteca:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/5-ludoteca.png) no-repeat;}
+
+.lounge:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/6-lounge1.png) no-repeat;}
+.lounge:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/6-lounge.png) no-repeat;}
+
+.raquetbol:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/7-raquetbol1.png) no-repeat;}
+.raquetbol:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/7-raquetbol.png) no-repeat;}
+
+.aquazona:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/8-aquazona1.png) no-repeat;}
+.aquazona:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/8-aquazona.png) no-repeat;}
+
+.areadejuego:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/9-areadejuego1.png) no-repeat;}
+.areadejuego:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/9-areadejuego.png) no-repeat;}
+
+
+.gym:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/10-gym1.png) no-repeat;}
+.gym:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/10-gym.png) no-repeat;}
+
+
+.minigolf:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/11-minigolf1.png) no-repeat;}
+.minigolf:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/11-minigolf.png) no-repeat;}
+
+
+.cafeteria:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/12-cafeteria1.png) no-repeat;}
+.cafeteria:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/12-cafeteria.png) no-repeat;}
+
+
+.ajedrez:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/13-ajedrez1.png) no-repeat;}
+.ajedrez:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/13-ajedrez.png) no-repeat;}
+
+
+
+.asoleadero:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/14-asoleadero1.png) no-repeat;}
+.asoleadero:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/14-asoleadero.png) no-repeat;}
+
+
+
+.alberca:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/15-alberca1.png) no-repeat;}
+.alberca:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/15-alberca.png) no-repeat;}
+
+
+
+.jacuzzi:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/16-jacuzzi1.png) no-repeat;}
+.jacuzzi:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/16-jacuzzi.png) no-repeat;}
+
+
+.juegosinfantiles:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/17-juegosinfantiles1.png) no-repeat;}
+.juegosinfantiles:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/17-juegosinfantiles.png) no-repeat;}
+
+
+.areasverdes:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/18-areasverdes1.png) no-repeat;}
+.areasverdes:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/18-areasverdes.png) no-repeat;}
+
+
+.ubicacion:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/19-ubicacion1.png) no-repeat;}
+.ubicacion:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/19-ubicacion.png) no-repeat;}
+
+
+.clubhouse:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse1.png) no-repeat;}
+.clubhouse:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/1-clubhouse.png) no-repeat;}
+
+
+.estacionamiento:before {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/2-estacionamiento.png) no-repeat;}
+.estacionamiento:hover {content:url(http://clubnauticoteques.com/wp-content/uploads/2015/05/2-estacionamiento1.png) no-repeat;}
+
+.icon-viadeo:before { content: '\e843' !important; } /* 'î¡ƒ' */
