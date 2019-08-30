@@ -21,6 +21,8 @@
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<!--Font Awesome-->
 		<script src="https://kit.fontawesome.com/7c9178a2fa.js"></script>
+		<!--CUSTOM FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<!--load all styles -->
 		<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -131,12 +133,19 @@
 <div class=""><!--class: slider-parallax-inner-->
 <div class="swiper-container swiper-parent">
 	<div class="swiper-wrapper">
+		<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/0.jpg');">
+			<div class="container clearfix">
+				<div class="slider-caption slider-caption-center slider-bg0">
+					<h2 style="color: white; font-size:2em;" data-caption-animate="fadeInUp">TERRA VERDE <b>TARANGO</b></h2>
+					
+					
+				</div>
+			</div>
+		</div>
 		<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
 			<div class="container clearfix">
-				<div class="slider-caption slider-caption-center slider-bg">
-					<h2 style="color: white" data-caption-animate="fadeInUp">INICIAMOS PREVENTA DEPARTAMENTOS</h2>
-					
-					
+				<div class="slider-caption slider-caption-center slider-bg2">
+					<h2 style="color: white" data-caption-animate="fadeInUp">PREVENTA DE DEPARTAMENTOS<BR></h2><h3 data-caption-animate="fadeInUp">Con amenidades exclusivas</h3>
 				</div>
 			</div>
 		</div>
@@ -151,7 +160,7 @@
 		<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/3.jpg');">
 			<div class="container clearfix">
 				<div class="slider-caption slider-caption-center slider-bg2">
-					<h3 style="color: white" data-caption-animate="fadeInUp">2 cajones de<BR></h3><h2 data-caption-animate="fadeInUp">estacionamiento</h2>
+					<h3 style="color: white;" data-caption-animate="fadeInUp">2 cajones de<BR></h3><h2 style="color:white;" data-caption-animate="fadeInUp">estacionamiento</h2>
 				</div>
 			</div>
 		</div>
@@ -183,7 +192,102 @@
 	<div class="col-xs-12">
 		<p style="font-size: 16px">Desarrollo ubicado con vías de acceso rápidas hacia Periférico, Santa Fe y al sur de la ciudad, &nbsp;Terra Verde Tarango cuenta con un concepto de diseño moderno, elegante y con amenidades exclusivas para brindarte un estilo de vida que tú mereces.</p>
 		<p style="font-size: 16px">Su ubicación mantiene a Terra Verde Tarango cerca de todos los servicios necesarios, como hospitales, escuelas, bancos, supermercados, centros comerciales etc. </p>
-		<center><a href="http://terraverdetarango.com/brochure.pdf" target="new" class="button button-3d button-dark button-large center nobottommargin" style="margin-top: 30px;">BROCHURE</a></center>
+		<center>
+			<button type="button" class="button-3d button-dark button-large center nobottommargin" data-toggle="modal" data-target="#descargarBrochure" style="width: 100%;"><h3 class="text-uppercase" style="color: white !important;">Descargar Folleto</h3></button>
+			
+
+		<!--INICIO: MODAL DESCARGA DE BROCHURE-->
+				<div class="modal fade" id="descargarBrochure" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title" id="exampleModalLongTitle">Descarga el folleto completo</h3>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="row mb-5">
+									<div class="col-lg-12 text-center">
+										<p>Compártanos sus datos y descargue el brochure de Terra Verde Tarango.</p>
+										<br>
+									</div>
+								</div>
+								<form action="descargar_folleto.php" method="post" name="contactform" onsubmit="return submitUserForm();">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+												<input type="text" placeholder="Nombre*" class="form-control c-square c-theme input-lg" name="first_name" id="first_name" required>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+												<input type="text" placeholder="Apellido*" class="form-control c-square c-theme input-lg" name="last_name" id="last_name" required>
+											</div>
+										</div>
+										
+									</div>
+									<div class="form-group">
+									<input type="text" placeholder="Email*" class="form-control c-square c-theme input-lg" name="mail" id="mail" required> </div>
+									<div class="form-group">
+										<input type="text" placeholder="Teléfono" class="form-control c-square c-theme input-lg" name="telephone" id="telephone">
+									</div>
+									<div class="form-group">
+										<label>Estado de residencia</label>
+										<select id="estado" name="estado" class="input-lg form-control c-square c-theme">
+											<option value="Aguascalientes">Aguascalientes</option>
+											<option value="Baja California">Baja California</option>
+											<option value="Baja California Sur">Baja California Sur</option>
+											<option value="Campeche">Campeche</option>
+											<option value="Chiapas">Chiapas</option>
+											<option value="Chihuahua">Chihuahua</option>
+											<option value="Cdmx">Ciudad de México</option>
+											<option value="Coahuila">Coahuila</option>
+											<option value="Colima">Colima</option>
+											<option value="Durango">Durango</option>
+											<option value="Estado de México">Estado de México</option>
+											<option value="Guanajuato">Guanajuato</option>
+											<option value="Guerrero">Guerrero</option>
+											<option value="Hidalgo">Hidalgo</option>
+											<option value="Jalisco">Jalisco</option>
+											<option value="Michoacan">Michoacán</option>
+											<option value="Morelos">Morelos</option>
+											<option value="Nayarit">Nayarit</option>
+											<option value="Nuevo_Leon">Nuevo León</option>
+											<option value="Oaxaca">Oaxaca</option>
+											<option value="Puebla">Puebla</option>
+											<option value="Queretaro">Querétaro</option>
+											<option value="Quintana Roo">Quintana Roo</option>
+											<option value="San Luis Potosi">San Luis Potosí</option>
+											<option value="Sinaloa">Sinaloa</option>
+											<option value="Sonora">Sonora</option>
+											<option value="Tabasco">Tabasco</option>
+											<option value="Tamaulipas">Tamaulipas</option>
+											<option value="Tlaxcala">Tlaxcala</option>
+											<option value="Veracruz">Veracruz</option>
+											<option value="Yucatan">Yucatán</option>
+											<option value="Zacatecas">Zacatecas</option>
+										</select>
+									</div>
+									<div class="row mt-5">
+										<div class="col-lg-12 text-center">
+											<p><small>*Campos requeridos</small></p>
+											<br>
+										</div>
+									</div>
+									
+									<!--<div class="g-recaptcha" data-sitekey="6LeAmYwUAAAAAHxjByS3bni_UxmcQzuAl5zB4ZOt"></div>-->
+									<input type="submit" name="submit_brochure" value="Ver Folleto"class="button">
+									
+								</form>
+								
+							</div>
+							<!--<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>-->
+						</div>
+					</div>
+				</div>
+				<!--FIN: MODAL DE DESCARGA DE BROCHURE-->
 	</div>
 </div>
 <div class="col-sm-2 col-xs-1"></div>
@@ -540,7 +644,7 @@
 	<div class="container">|
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<img src="img/promo_referidos.jpg">
+				<img src="images/promos/promo_referidos.jpg">
 			</div>		
 		</div>
 	</div>
@@ -672,7 +776,7 @@
 					<br>
 					<a href="mailto:ventas@terraverdetarango.com">ventas@terraverdetarango.com</a>
 					<br>
-					<a style="color: white" href="#test-popup">Aviso de Privacidad</a>
+					<a style="color: white" href="aviso_privacidad.pdf">Aviso de Privacidad</a>
 				</div>
 				</center>
 				
@@ -692,8 +796,8 @@
 	</div>
 </footer>
 <!--BUTTON WHATSAPP-->
-<div style="background-color:#02a047; width: 70px; height:70px; border-radius: 50%; position:fixed; top: 85vh; left: 5px; z-index:50000; display: block; ">
-	<div style="margin: auto; display: block; position: relative; left: 24%; top: 21%">
+<div style="background-color:#02a047; width: 60px; height:60px; border-radius: 50%; position:fixed; top: 85vh; left: 5px; z-index:50000; display: block; ">
+	<div style="margin: auto; display: block; position: relative; left: 20%; top: 15%">
 		<a href="https://wa.me/525573552395">
 			<i class="fab fa-whatsapp fa-3x" style="color:white;"></i>
 		</a>
