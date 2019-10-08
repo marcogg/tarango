@@ -1086,8 +1086,8 @@ body.stretched #header.full-header .container {
 
 #header.full-header #primary-menu > ul {
 	float: left;
-	padding-right: 10px;
-	margin-right: 10PX;
+	padding-right: 5px;
+	margin-right: 5PX;
 	margin-top: -25px;
 }
 
@@ -1099,7 +1099,7 @@ body.stretched #header.full-header .container {
 	opacity: 0;
 	pointer-events: none;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 12px;
 	position: absolute;
 	top: 50%;
 	width: 50px;
@@ -1137,7 +1137,7 @@ body.stretched #header.full-header .container {
 	padding-bottom: 39px;
 	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 11px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -3113,9 +3113,9 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	position: relative;
 	max-width: 800px;
 	max-height: 250px;
-	background-color: rgba(237, 28, 36,.75);
-	border: 20px solid #FFFFFF;
-	padding:3%;
+	background-color: rgba(50, 197, 210,.75);
+	border: 8px solid #FFFFFF;
+	padding-bottom:20px;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -3133,7 +3133,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	max-width: 800px;
 	max-height: 200px;
 	background-color: rgba(237, 28, 36,.75);
-	border: 20px solid #FFFFFF;
+	border: 8px solid #FFFFFF;
 	padding:3%;
 	text-align: center;
 	margin-right: auto;
@@ -3151,8 +3151,8 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	position: relative;
 	max-width: 800px;
 	max-height: 250px;
-	background-color: rgba(237, 28, 36,.75);
-	border: 20px solid #FFFFFF;
+	background-color: rgba(50, 197, 210,.75);
+	border: 8px solid #FFFFFF;
 	padding:3%;
 	text-align: center;
 	margin-right: auto;

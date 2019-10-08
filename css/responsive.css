@@ -6,7 +6,7 @@
 .promo-uppercase > span,
 .promo-uppercase > .container > span{font-size:14px;}
 }
-@media (min-width:992px) and (max-width:1199px){#wrapper{width:1000px;}
+@media (min-width:700px) and (max-width:1499px){#wrapper{width:1000px;}
 #header.transparent-header.floating-header .container{width:1030px;padding:0 30px;}
 #header.transparent-header.floating-header.sticky-header .container{width:970px;padding:0 15px;}
 #primary-menu.sub-title ul > li > a{padding-left:10px;padding-right:10px;}
@@ -526,7 +526,7 @@ table.cart .quantity .qty{border:0;border-top:1px solid #DDD;border-bottom:1px s
 #top-account a.btn i:last-child{display:none;}
 .swiper_wrapper:not(.force-full-screen),
 .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide,
-.ei-slider{height:180px !important;}
+.ei-slider{height:280px !important;}
 .swiper_wrapper .slider-caption h2{font-size:28px;} .slider-caption h3{font-size:25px; line-height: 0.9;}
 #header.transparent-header.floating-header .container{width:310px;padding:0 15px;}
 .portfolio-filter li{width:50%;}
