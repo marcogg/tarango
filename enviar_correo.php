@@ -14,7 +14,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "ventas@terraverdetarango.com";
+    $email_to = "digital@grupohodaya.com, mgarcia@grupohodaya.com";
  
     $email_subject = "Mail-Contacto";
  
@@ -100,7 +100,7 @@ if(isset($_POST['email'])) {
  
   }
  
-    $email_message = "Form details below.\n\n";
+    $email_message = "Nueva entrada desde contacto.\n\n";
  
      
  
@@ -144,7 +144,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  
  
-echo "<script>alert('Correo enviado'); location.href='http://terraverdetarango.com';</script>";
+echo "<script>window.location.href='gracias_contacto.html';</script>";
  
  
  
