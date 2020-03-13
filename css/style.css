@@ -3515,22 +3515,50 @@ body:not(.no-transition) #wrapper,
 }
 
 .btn-tarango{
-	background-color: transparent;
-	border: 3px solid #35BFAE;
-	padding: 1%;
-	font-size: 3.5rem;
-	text-transform: uppercase;
-	color: #35BFAE;
-	font-weight: 700;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	border:3px solid #35BFAE;
+	background-color: #35BFAE;
+	font-size: 3.5rem;
+	padding: 1.6%;
+	color: white;
+	width: 100%;
 }
 
 .btn-tarango:hover{
 	transition: ease 0.5s;
-	background-color: #35BFAE;
+	background-color: transparent;
+	border: 3px solid #35BFAE;
+	padding: 1.6%;
 	font-size: 3.5rem;
+	color: #35BFAE;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+
+}
+
+.btn-facebook{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border:3px solid #1D528D;
+	background-color: #1D528D;
+	font-size: 3.5rem;
+	padding: 1.6%;
 	color: white;
+	width: 100%;
+}
+
+.btn-facebook:hover{
+	transition: ease 0.5s;
+	background-color: transparent;
+	border: 3px solid #1D528D;
+	padding: 1.6%;
+	font-size: 3.5rem;
+	color: #1D528D;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
 
 }
 
