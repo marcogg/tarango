@@ -3562,3 +3562,8 @@ body:not(.no-transition) #wrapper,
 
 }
 
+@media screen and (max-width:992px){
+	.creditos{
+		color: white;
+	}
+}
