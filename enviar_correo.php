@@ -14,7 +14,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "digital@grupohodaya.com, mgarcia@grupohodaya.com";
+    $email_to = "digital@grupohodaya.com, mgarcia@grupohodaya.com, rcruz@grupohodaya.com, cherrera@grupohodaya.com, lsapien@grupohodaya.com, chernandez@grupohodaya.com";
  
     $email_subject = "Mail-Contacto";
  

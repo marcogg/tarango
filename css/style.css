@@ -3449,7 +3449,7 @@ body:not(.no-transition) #wrapper,
 
 @media screen and (min-width: 992px){
 	.servicios{
-		height: 141px !important;
+		height: 180px !important;
 	}
 	.intro{
 		padding-left: 12% !important;
