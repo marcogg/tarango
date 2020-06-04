@@ -560,7 +560,7 @@
 		<a href="tel:5575839070"><h3 class="btn-tarango text-uppercase text-center"><strong>Llama ahora</strong></h3></a>
 	</div>
 	<div class="col-lg-6" style="padding: 3%;">
-		<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/5TqpzQZ1H70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/5cA6kBvHydk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<h3>Este Desarrollo Inmobiliario en el Sur de CDMX cuenta con:</h3>
 		
 	</div>
@@ -785,18 +785,75 @@
 	<div class="section nomargin no-gutters clearfix">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="titulos text-uppercase">Promociones</h2>
+				<h2 class="titulos text-uppercase">Promos</h2>
 			</div>
 			<div class="col-lg-6">
-				
-				<center><img src="images/promos/promo_referidos.jpg" class="box-shadow img-responsive" alt="Promocion Referidos"></center>
-				
+				<center><img src="images/promos/referidos.jpg" class="box-shadow img-responsive" alt="Promocion Referidos"></center>
+				<div class="col-lg-6 col-lg-offset-3"><button onclick="promoReferidos()" class="btn-tarango" id="botonReferido">Ver mecánica y restricciones</button></div>
 			</div>
 			<div class="col-lg-6">
-				<img src="images/promos/promo_covid.jpg" class="box-shadow img-responsive">
+				<center><img src="images/promos/covid.jpg" class="box-shadow img-responsive"></center>
+				<div class="col-lg-6 col-lg-offset-3"><button onclick="promoCovid()" class="btn-tarango" id="botonCovid">Ver mecánica y restricciones</button></div>
 			</div>
 		</div>
-		
+		<!--INICIO: MODALES PROMOCIONES-->
+		<!--INICIO: Promo Referidos-->
+		<div id="promoReferido" class="modal-covid" style="display: none;">
+			<div class="mensaje">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-10 col-md-offset-10 col-sm-offset-10 col-xs-offset-10"><button onclick="cerrarReferidos()" id="cerrarReferidos" class="cerrar">Cerrar</button></div>
+				
+				<h3>Si conoces a alguien que quiera un departamento exclusivo refiérenos y gana $10,000</h3>
+				<ol>
+					<li>1. Proporciona la información de tus referidos a uno de nuestros asesores inmobiliarios.</li>
+					<li>2. Cuando tus referidos visiten Terra Verde Tarango deberán dar tu nombre.</li>
+					<li>3. El asesor que atienda a tus referidos te dará un vale el cual podrás canjear cuando tus referidos escrituren el inmueble.</li>
+					<li>4. Entre más referidos mandes más podrás ganar.</li>
+					<li>La promoción será válida cuando el cliente indique al asesor de ventas que es un referido y brinde el nombre de la persona que lo recomendó.
+					El asesor deberá entregar un vale con los datos del que refiere y el referido, el cual podrá ser canjeado al momento de efectuarse la escrituración del departamento. No aplica con otras promociones.</li>
+				</ol>
+			</div>
+		</div>
+		<!--FIN: Promo Referidos-->
+		<!--INICIO: Promo COVID-->
+			<div id="promoCovid" class="modal-covid" style="display: none;">
+			<div class="mensaje">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-10 col-md-offset-10 col-sm-offset-10 col-xs-offset-10"><button onclick="cerrarCovid()" id="cerrarCovid" class="cerrar">Cerrar</button></div>
+				<h4>Promoción: Descuento en apoyo a la contingencia sanitaria</h4>
+				<p>
+					<ul>
+						<li>Monto de descuento: $50,000</li>
+						<li>Vigencia: del 1 junio al 15 junio del 2020</li>
+						<li>Prototipos: todos</li>
+						Restricciones:
+						<li>Siendo exclusiva para los clientes que integren su expediente en un lapso no mayor a 14 días
+						naturales a partir de la fecha del cierre de venta y que realicen el pago de la reservación al
+						100%. No aplica con otras promociones o descuentos.</li>
+						MECÁNICA:
+						<li>Compra un departamento en Terra Verde Tarango del 1 de junio al 15 de junio del 2020 y
+						obtén un descuento de $50,000.00, siendo exclusiva para los clientes que integren su
+						expediente completo en un lapso no mayor a 14 días naturales a partir de la fecha del cierre
+						de la venta y que realicen el pago de la reservación al 100%. No aplica con otras
+						promociones o descuentos.</li>
+					</ul>
+					<p>RESTRICCIONES:</p>
+					<ul>
+						<li>El descuento se aplicará al precio de la propiedad, para hacer valido el descuento el asesor inmobiliario deberá entregar el vale original al cliente.</li>
+						<li>Promoción valida a partir del 1 junio al 15 de junio del 2020.</li>
+						<li>Exclusivamente para los clientes que integren su expediente en un lapso no mayor a 14 días naturales a partir del cierre de la venta.</li>
+						<li>No aplica con otras promociones.</li>
+						<li>El descuento se explicará durante la compra / venta, el asesor deberá hacer entrega de un vale con la descripción y firmas de autorización correspondientes.</li>
+						<li>La promoción está sujeta a cambios sin previo aviso.</li>
+						<li>Los costos de los inmuebles pueden variar dependiendo del modelo, ubicación y condiciones.</li>
+						<li>El cliente autoriza a comunicar la entrega de la promoción, en los medios que a la empresa mejor convenga.</li>
+						<li>En caso de cancelar la operación, la promoción no tendrá validez alguna.</li>
+						<li>El diseño superficie, decoración imágenes y mobiliario, son sólo ilustrativo y podrán tener modificaciones sin previo aviso. Por tanto, no constituye un compromiso, obligación y oferta comercial o legal de la empresa vendedora.</li>
+					</ul>
+				</p>
+				
+			</div>
+		</div>
+		<!--FIN: Promo COVID--> 
+		<!--FIN: MODALES PROMOCIONES-->
 	</div>
 </section>
 <section>
@@ -1014,8 +1071,8 @@
                                                 <i class="fas fa-info-circle fa-5x text-center" style="color: lightgray;"></i>
                                             <p>Para nosotros es muy importante cuidar de nuestros clientes y en apoyo a la contingencia del Coronavirus (Covid-19) y para evitar su propagación, tomamos las siguientes medidas sanitarias:
                                             <ul class="text-left">
-                                                <li>Si decides quedarte en casa, nuestro equipo de ventas te atenderá a través de nuestra línea telefónica: <a href="tel:5588543338">55 8854 3338</a> o vía WhatsApp al número <a href="https://wa.me/525573552395">5573552395</a>, donde recibirás toda la información de la misma forma que si nos visitaras. </li>
-                                                <li>En caso de que decidas agendar una visita, nuestro desarrollo contará con gel antibacterial y reforzaremos las medidas de limpieza e higiene diarias en los lugares donde transcurren las personas.</li>
+                                                Si decides quedarte en casa, nuestro equipo de ventas te atenderá a través de nuestra línea telefónica: <a href="tel:5588543338">55 8854 3338</a> o vía WhatsApp al número <a href="https://wa.me/525573552395">5573552395</a>, donde recibirás toda la información de la misma forma que si nos visitaras.
+                                                En caso de que decidas agendar una visita, nuestro desarrollo contará con gel antibacterial y reforzaremos las medidas de limpieza e higiene diarias en los lugares donde transcurren las personas.
                                             </ul> 
                                             Para Terra Verde Tarango lo más importante es la salud de nuestros clientes.
                                             </p>
@@ -1033,7 +1090,45 @@
                                     get.style.display="none";
                                 };
                                 
-                                
+                                var promoReferido = document.getElementById("promoReferido");
+                                function promoReferido(){
+                                	promoReferido.style.display="block";
+                                };
+
+                                var cerrarReferidos = document.getElementById("promoReferido");
+                                function cerrarReferidos(){
+                                	promoReferido.style.display="none";
+                                };
+                            </script>
+
+                            <script type="text/javascript">
+                            	$(document).ready(function(){
+
+                            		//PROMO REFERIDOS
+	                            		$('#botonReferido').click(function promoReferidos(event) {
+	                            			$('#promoReferido').css('display','block');
+	                            			
+	                            		});
+	                            		//Cerrar
+	                            		$('#cerrarReferidos').click(function(event) {
+	                            			$('#promoReferido').hide();
+	                            			
+	                            		});
+
+	                            	//PROMO COVID
+		                            	$('#botonCovid').click(function promocionCovid(event) {
+		                            		$('#promoCovid').css('display', 'block');
+		                            		
+		                            	});
+
+		                            	//Cerrar
+		                            	$('#cerrarCovid').click(function(event) {
+		                            		$('#promoCovid').hide();
+		                            		
+		                            	});
+
+                            	});
+                            	
                             </script>
 </body>
 </html>

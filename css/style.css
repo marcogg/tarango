@@ -3581,13 +3581,14 @@ body:not(.no-transition) #wrapper,
 @media screen and (min-width: 998px){
 	.mensaje{
 	background-color: white;
-	padding: 5%;
+	padding: 4%;
 	border-radius: 10px;
 	display: block;
 	margin: auto;
 	position: relative;
 	top: 10%;
-	max-width:500px; 
+	max-width:600px;
+	font-size: 1.2rem; 
 }
 }
 
@@ -3595,13 +3596,25 @@ body:not(.no-transition) #wrapper,
 @media screen and (max-width: 998px){
 	.mensaje{
 		background-color: white;
-		padding: 5%;
+		padding: 4%;
 		border-radius: 10px;
 		display: block;
 		margin: auto;
 		position: relative;
 		top: 10%;
-		max-width: 300px;
-		font-size: 1.4rem;
+		max-width: 350px;
+		font-size: 1rem;
 	}
+
+	ul,ol .mensaje{
+	font-size: 0.8rem;
 }
+}
+
+.cerrar{
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 1.5rem;
+	color: #A1A1A1;
+}
+
