@@ -3,7 +3,8 @@
 if(isset($_POST['mail'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "digital@grupohodaya.com, mgarcia@grupohodaya.com, rcruz@grupohodaya.com, cherrera@grupohodaya.com, lsapien@grupohodaya.com, chernandez@grupohodaya.com";
+    $email_to = "mgarcia@grupohodaya.com";
+    //digital@grupohodaya.com, rcruz@grupohodaya.com, cherrera@grupohodaya.com, lsapien@grupohodaya.com, chernandez@grupohodaya.com
     $email_subject = "Terra Verde Tarango: Nueva entrada desde Descarga de Brochure";
  
     function died($error) {
@@ -39,7 +40,7 @@ if(isset($_POST['mail'])) {
     //$comments = $_POST['comments']; // required
     //$estado = $_POST['estado']; //not required
     //$selected_val=$_POST['estado'];
- 
+    
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
@@ -90,18 +91,56 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 $headers .= 'MIME-Version: 1.0' . "\r\n";
 $headers .='Content-type: text/html; charset=UTF-8' . "\r\n";
-@mail($email_to, $email_subject, $email_message, $headers);  
+@mail($email_to, $email_subject, $email_message, $headers);
+
+//INPUT IN VARIABLES
+$name = $_POST['first_name'];
+$email = $_POST['mail'];
+$phone = $_POST['telephone'];
+
+//Conecction to Data base
+$host ="localhost";
+$dbUsername ="root";
+$dbPassword="";
+$dbname="tarango_descargas_folleto";
+
+$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+
+if (mysqli_connect_error()) {
+  die('connect Error('. mysqli_connect_errno().')'.mysqli_connect_error());
+  
+  }else{
+    $SELECT = "SELECT email FROM registros_folleto Where email=? Limit=1";
+    $INSERT = "INSERT into registros_folleto (name, email, phone) values (?,?,?)";
+
+
+
+
+    //Prepare Statement
+    $stmt = $conn->prepare($SELECT);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($email);
+    $stmt->store_result();
+    $rnum = $stmt->num_rows;
+
+    if($rnum==0){
+      $stmt->close();
+
+      $stmt = $conn->prepare($INSERT);
+      $stmt->bind_param("ssi", $name, $email, $phone);
+
+      $stmt->excecute();
+    }
+    $stmt->close();
+    $conn->close();
+  }
+
+
+}
 ?>
  
 <!-- include your own success html here -->
-
-<script type="text/javascript">
-  window.location.href = "gracias_folleto.html";
-</script>
-
-
-
-<?php
- 
-}
-?>
+    <script type="text/javascript">
+      window.location.href = "gracias_folleto.html";
+    </script>

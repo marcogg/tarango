@@ -154,7 +154,7 @@
 <div class="swiper-container swiper-parent">
 <div class="swiper-wrapper">
 	<!--INICIO: SLIDER PROMOCION-->
-		<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/banner-dia-papa.jpg');">
+		<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/banner-dia-papa.jpg');" id="promocionVigente">
 		</div>
 	<!--FIN:SLIDER PROMOCIÓN-->
 
@@ -163,7 +163,7 @@
 		<div class="slider-caption slider-caption-center slider-bg0">
 			<h2 style="color: white; font-size:1.7em;" data-caption-animate="fadeInUp">TERRA VERDE <b>TARANGO</b>
 				<br>
-				<b>desde $2,400,000</b></h2>
+				<b>desde $2,630,000</b></h2>
 			
 			
 		</div>
@@ -172,7 +172,7 @@
 <div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
 	<div class="container clearfix">
 		<div class="slider-caption slider-caption-center slider-bg2">
-			<h2 style="color: white;" data-caption-animate="fadeInUp">ÚLTIMAS SEMANAS EN PREVENTA<BR></h2><h3 data-caption-animate="fadeInUp">Departamentos exclusivos desde $2,400,000</h3>
+			<h2 style="color: white;" data-caption-animate="fadeInUp">ÚLTIMAS SEMANAS EN PREVENTA<BR></h2><h3 data-caption-animate="fadeInUp">Departamentos exclusivos desde $2,630,000</h3>
 		</div>
 	</div>
 </div>
@@ -269,7 +269,7 @@
 						<br>
 					</div>
 				</div>
-				<form action="descargar_folleto.php" method="post" name="contactform" onsubmit="return submitUserForm();">
+				<form action="descargar_folleto.php" method="post" name="contactform" onsubmit="return submitUserForm();"  enctype="muldata">
 					<div class="form-group">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -751,7 +751,7 @@
 					<h2 class="">Inversión</h2>
 				</div>
 			
-				<p class="">Compra ahora tu depa a precio de preventa y obtén un <span class="text-uppercase">incremento en la plusvalía</span> de tu inmueble a la entrega, <strong>precios desde 2.5 Millones MXN</strong>.</p>
+				<p class="">Compra ahora tu depa a precio de preventa y obtén un <span class="text-uppercase">incremento en la plusvalía</span> de tu inmueble a la entrega, <strong>precios desde 2.63 Millones MXN</strong>.</p>
 				<button type="button" class="btn-tarango" data-toggle="modal" data-target="#descargarBrochure" style="width: 100%;"><h3 class="text-uppercase"><strong>Solicita más Información</strong></h3></button>
 			</div>
 			<div class="col-lg-6">
@@ -1126,7 +1126,28 @@
 		                            	});
 
                             	});
+
+                            	//BAJAR PROMOCINES AUTOMATICAMENTE
+                            	window.setInterval(function(){
+
+								  var current = new Date();
+								  var expiry  = new Date("July 20, 2020 13:55:00")
+								  //var expiry2 = new Date("October 30, 2012 12:00:00")
+
+								  if(current.getTime()>expiry.getTime()){
+								    $('#promocionVigente').hide();
+								  }
+										 // else if(current.getTime()>expiry2.getTime()){
+										 //      $('#two').hide();
+										 //      $('#three').show();
+										 // }
+
+								}, 3000);
                             	
+
+                            	
+
+
                             </script>
 </body>
 </html>
